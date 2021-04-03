@@ -1,7 +1,7 @@
 # slack_laravel
 Laravel에서 Slack(슬랙)으로 log 메시지 발송하는 API
 
-## Spec
+## Tech
 - laravel : 8.15
 - php : 7.4
 - composer package
@@ -24,9 +24,18 @@ After that, publish the configuration file:
 php artisan vendor:publish --provider="Pressutto\LaravelSlack\ServiceProvider"
 ```
 
-## image
+### Sample image screenshot
 <img src="/resources/images/image1.png" height="400"><br>
 
+
+### Error
+1. 문제 : Fatal error: Allowed memory size of 1610612736 bytes exhausted 에러
+
+   해결 : vi /usr/local/etc/php/7.4/conf.d/php-memory-limits.ini에서 memory_limit을 -1로 수정
+
+
+### Option
+1. MySQL의 데이터를 select 하기위한 DB설정
 
 
 ### Ref

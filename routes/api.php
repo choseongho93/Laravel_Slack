@@ -17,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::group(["namespace"=>"Log"],function(){
+    // 30분이상 지연되었을때 슬랙으로 로그 알림 발송
+    Route::get('/delay/call/log', 'DelayController@delayDataSend');
+});
