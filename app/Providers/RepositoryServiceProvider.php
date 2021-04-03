@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Repositories\Log\DelayRepo;
+use App\Repositories\Log\IDelayRepo;
 use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider
