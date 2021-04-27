@@ -35,7 +35,7 @@ php artisan vendor:publish --provider="Pressutto\LaravelSlack\ServiceProvider"
 
 
 ### Option
-1. MySQL의 데이터를 select 하기위한 DB설정
+1. MySQL의 데이터를 select 하기위한 DB Connection 설정
 
 
 ### Ref
