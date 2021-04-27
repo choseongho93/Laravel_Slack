@@ -1,4 +1,4 @@
-# slack_laravel
+# Laravel_Slack
 Slack(슬랙)으로 log 메시지 발송하는 API
 
 ## Tech
