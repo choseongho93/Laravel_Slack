@@ -29,8 +29,8 @@ php artisan vendor:publish --provider="Pressutto\LaravelSlack\ServiceProvider"
 
 
 ### Error
-1.. 문제 : Fatal error: Allowed memory size of 1610612736 bytes exhausted 에러
- 해결 : vi /usr/local/etc/php/7.4/conf.d/php-memory-limits.ini에서 memory_limit을 -1로 수정
+1. 문제 : Fatal error: Allowed memory size of 1610612736 bytes exhausted 에러
+ - 해결 : vi /usr/local/etc/php/7.4/conf.d/php-memory-limits.ini에서 memory_limit을 -1로 수정
 
 
 ### Option
